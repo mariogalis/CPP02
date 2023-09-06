@@ -14,7 +14,7 @@
 
 Fixed::Fixed(void) : _whole(0)
 {
-	std::cout << "Constructor called" << std::endl;
+	std::cout << "Default constructor called" << std::endl;
 }
 
 Fixed::~Fixed(void)

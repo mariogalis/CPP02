@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-SRCS	= main.cpp Fixed.hpp Fixed.cpp
+SRCS	= main.cpp Fixed.cpp
 
 OBJS	= ${SRCS:.cpp=.o}
 
@@ -18,7 +18,7 @@ SRCSB	=
 
 OBJB	= ${SRCSB:.cpp=.o}
 
-NAME	= harl
+NAME	= fixedPoint
 
 CXX	= clang++
 
