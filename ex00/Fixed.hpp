@@ -22,9 +22,10 @@ class Fixed
 	public:
 
 		Fixed(void);
+		Fixed(std::string name);
 		Fixed(const Fixed &copy);
 		~Fixed();
-		Fixed &operator=(const Fixed &copy);
+		Fixed const &operator=(const Fixed &copy);
 		int		getRawBits(void) const;
 		void	setRawBits(int const raw);
 	
