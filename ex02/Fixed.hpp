@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mario <mario@student.42.fr>                +#+  +:+       +#+        */
+/*   By: magonzal <magonzal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 10:07:18 by mario             #+#    #+#             */
-/*   Updated: 2023/09/14 10:39:43 by mario            ###   ########.fr       */
+/*   Updated: 2023/09/14 17:33:52 by magonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,17 +29,18 @@ class Fixed
         
         Fixed &operator=(const Fixed &copy);
         
-        bool operator<(const Fixed &other);
-        bool operator>(const Fixed &other);
-        bool operator<=(const Fixed &other);
-        bool operator>=(const Fixed &other);
-        bool operator==(const Fixed &other);
-        bool operator!=(const Fixed &other);
+        bool operator<(const Fixed &other)const;
+        bool operator>(const Fixed &other)const;
+        bool operator<=(const Fixed &other)const;
+        bool operator>=(const Fixed &other)const;
+        bool operator==(const Fixed &other)const;
+        bool operator!=(const Fixed &other)const;
 
-        Fixed operator+(const Fixed &other);
-        Fixed operator-(const Fixed &other);
-        Fixed operator*(const Fixed &other);
-        Fixed operator/(const Fixed &other);
+        Fixed operator+(const Fixed &other)const;
+        Fixed operator-(const Fixed &other)const;
+        Fixed operator*(const Fixed &other)const;
+        Fixed operator/(const Fixed &other)const;
+        
         Fixed operator++(void);
         Fixed operator--(void);
         Fixed operator++(int);
@@ -53,6 +54,8 @@ class Fixed
         static Fixed &min(Fixed &a, Fixed &b);
         static Fixed &max(Fixed &a, Fixed &b);
         
+        static const Fixed &min(const Fixed &a, const Fixed &b);
+        static const Fixed &max(const Fixed &a, const Fixed &b);
         
     private:
         

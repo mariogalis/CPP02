@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mario <mario@student.42.fr>                +#+  +:+       +#+         #
+#    By: magonzal <magonzal@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/11 12:49:31 by mario             #+#    #+#              #
-#    Updated: 2023/09/11 12:49:39 by mario            ###   ########.fr        #
+#    Updated: 2023/09/14 16:44:13 by magonzal         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ CXX	= clang++
 
 RM	= rm -f
 
-CXXFLAGS	= -Wall -Wextra -Werror -std=c++98 -g3 -fsanitize=address
+CXXFLAGS	= -Wall -Wextra -Werror -std=c++98 
 
 .c.o:
 		${CXX} ${CXXFLAGS} -c $< -o ${<:.cpp=.o}

@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mario <mario@student.42.fr>                +#+  +:+       +#+         #
+#    By: magonzal <magonzal@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/14 10:07:48 by mario             #+#    #+#              #
-#    Updated: 2023/09/14 10:07:50 by mario            ###   ########.fr        #
+#    Updated: 2023/09/14 17:40:22 by magonzal         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,13 +18,13 @@ SRCSB	=
 
 OBJB	= ${SRCSB:.cpp=.o}
 
-NAME	= fixedPoint2
+NAME	= fixedPoint3
 
 CXX	= clang++
 
 RM	= rm -f
 
-CXXFLAGS	= -Wall -Wextra -Werror -std=c++98 -g3 -fsanitize=address
+CXXFLAGS	= -Wall -Wextra  -std=c++98 
 
 .c.o:
 		${CXX} ${CXXFLAGS} -c $< -o ${<:.cpp=.o}
